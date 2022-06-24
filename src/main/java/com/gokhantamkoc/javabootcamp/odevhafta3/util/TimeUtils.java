@@ -22,7 +22,7 @@ public class TimeUtils {
 
 	public static Date convertToDate(long millis) {
 		
-			//epoch time convert to Date type
+			//epoch time convert to Date type.
 			Date date = new Date(millis);
 			
 			return date;
