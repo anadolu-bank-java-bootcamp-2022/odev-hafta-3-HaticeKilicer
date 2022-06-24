@@ -16,10 +16,15 @@ public class TimeUtils {
 			millis = Long.parseLong(time.substring(9, 12));
 		}
 		timeMillis = (hours * 60 + minutes) * 60 * 1000 + seconds * 1000 + millis;
+		System.out.println("timeMillis : " + timeMillis);
 		return timeMillis;
 	}
 
 	public static Date convertToDate(long millis) {
-		// Bu metodu doldurmanizi bekliyoruz.
+		
+			//epoch time convert to Date type
+			Date date = new Date(millis);
+			
+			return date;
 	}
 }
